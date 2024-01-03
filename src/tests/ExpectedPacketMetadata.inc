@@ -1,0 +1,56 @@
+const char ExpectedPacketMeta[] = "packet: PacketBasic (5) id: 0 of types: nothing\n\
+	BASE_PACKET base\n\
+		dynamic: false\n\
+		size: 2\n\
+		offset: 0\n\
+	uint8_t byte_1_field\n\
+		dynamic: false\n\
+		size: 1\n\
+		offset: 2\n\
+	uint8_t byte_2_field\n\
+		dynamic: false\n\
+		size: 1\n\
+		offset: 3\n\
+	uint8_t byte_3_field\n\
+		dynamic: false\n\
+		size: 1\n\
+		offset: 4\n\n\
+packet: PacketMultiByte (16) id: 1 of types: multi-byte \n\
+	BASE_PACKET base\n\
+		dynamic: false\n\
+		size: 2\n\
+		offset: 0\n\
+	uint16_t two_byte_field\n\
+		dynamic: false\n\
+		size: 2\n\
+		offset: 2\n\
+	uint32_t four_byte_field\n\
+		dynamic: false\n\
+		size: 4\n\
+		offset: 4\n\
+	uint64_t eight_byte_field\n\
+		dynamic: false\n\
+		size: 8\n\
+		offset: 8\n\n\
+packet: PacketDynamic (34) id: 2 of types: dynamic multi-byte \n\
+	BASE_PACKET base\n\
+		dynamic: false\n\
+		size: 2\n\
+		offset: 0\n\
+	uint16_t two_byte_field\n\
+		dynamic: false\n\
+		size: 2\n\
+		offset: 2\n\
+	uint32_t four_byte_field\n\
+		dynamic: false\n\
+		size: 4\n\
+		offset: 4\n\
+	OPAQUE_MEMORY dyn_1\n\
+		dynamic: true\n\
+		size: 24\n\
+		offset: 8\n\
+	uint16_t two_byte_field_2\n\
+		dynamic: false\n\
+		size: 2\n\
+		offset: 32\n\n\
+";

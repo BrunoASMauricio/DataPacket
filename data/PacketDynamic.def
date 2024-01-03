@@ -1,0 +1,7 @@
+#define PACKET_NAME PacketDynamic
+PACKET_START()
+PACKET_FIELD(uint16_t, two_byte_field)
+PACKET_FIELD(uint32_t, four_byte_field)
+PACKET_FIELD_DYNAMIC(dyn_1)
+PACKET_FIELD(uint16_t, two_byte_field_2)
+PACKET_FINALIZE()

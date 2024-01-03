@@ -1,0 +1,6 @@
+#define PACKET_NAME PacketMultiByte
+PACKET_START()
+PACKET_FIELD(uint16_t, two_byte_field)
+PACKET_FIELD(uint32_t, four_byte_field)
+PACKET_FIELD(uint64_t, eight_byte_field)
+PACKET_FINALIZE()

@@ -1,0 +1,6 @@
+#define PACKET_NAME PacketBasic
+PACKET_START()
+PACKET_FIELD(uint8_t, byte_1_field)
+PACKET_FIELD(uint8_t, byte_2_field)
+PACKET_FIELD(uint8_t, byte_3_field)
+PACKET_FINALIZE()
