@@ -264,6 +264,8 @@ in due time.
 
 ### TODOs
 
+- [ ] Opt for network byte order instead of endian field
+- [ ] Add option to generate wireshark packet decomposer automatically
 - [ ] Multi thread support on packet generation and operations
 - [ ] Add basic support for encapsulation and fragmentation (try to reduce
 amount oc "allocate, copy, free" necessary)
