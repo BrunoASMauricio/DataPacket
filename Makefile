@@ -33,8 +33,6 @@ COMMA = ,
 CFLAGS += -D $(subst ${COMMA}, -D ,$(DEFS) )
 endif
 
-$(info $$var is [${CFLAGS}])
-
 # No defaults
 .SUFFIXES:
 .PHONY: clean build run debug memory all
