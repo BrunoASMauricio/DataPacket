@@ -40,6 +40,8 @@ endif
 $(OBJ_DIR)/%.o : $(SRC_DIR)/%.c*
 	$(CC) $(CFLAGS) -c $< -o $@
 
+all: run
+
 clean:
 	find $(OBJ_DIR) -name "*.o" -exec rm "{}" \;
 	find $(EXE_DIR) -name "*.exe" -exec rm "{}" \;
@@ -55,5 +57,3 @@ debug: build $(TARGET)
 
 memory: build $(TARGET)
 	valgrind -s --show-leak-kinds=all --leak-check=full --track-origins=yes $(TARGET)
-
-all: run
